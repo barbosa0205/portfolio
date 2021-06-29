@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('/src/fonts/JetBrainsMono-Regular.ttf');
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	width: auto;
+
+	font-family: JetBrains Mono;
+}
+
+a {
+	text-decoration: none;
+	color: #202020;
+	font-size: 1.6rem;
+}
+
+.sidebar {
+	width: 60%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -65%;
+	transition: 0.4s;
+	background: #f9f9f9;
+	box-shadow: 0 0 10px 0 #cccccc;
+	z-index: 1000;
+}
+
+.sidebar-open {
+	left: 0;
+	transition: 0.4s;
+}
+
+.toggle-night {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+}
+
+.toggle-night i {
+	padding: 10px;
+	font-size: 2.5rem;
+	color: #dadada;
+}
+
+.main-links {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.main-links a {
+	display: inline-block;
+	padding: 20px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.main-links a:first-child {
+	border: 1px solid #e2e2e2;
+}
+
+/* .push {
+	margin-left: 50%;
+	transition: 0.4s;
+} */
+
+.main-header {
+	top: 0;
+	position: sticky;
+	display: flex;
+	justify-content: flex-end;
+	width: auto;
+	background: transparent;
+}
+
+.menu {
+	display: inline-block;
+	padding: 20px;
+	color: #000000;
+	font-size: 2rem;
+}
+
+.home__container {
+	width: auto;
+	height: auto;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+	min-height: 710px;
+	height: auto;
+}
+
+.home h1 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 3rem;
+	word-wrap: break-word;
+	font-weight: 400;
+	text-align: start;
+	color: rgb(53, 52, 52);
+	text-shadow: -4px 2px #dfdfdf;
+
+	animation: slideInLeft;
+	animation-duration: 0.8s;
+}
+/* .home h1:hover {
+	text-shadow: ;
+} */
+
+.home img {
+	animation: slideInRight;
+	animation-duration: 1.1s;
+}
+
+.home button {
+	width: 120px;
+	font-size: 1.8rem;
+	color: #ffffff;
+	background-color: #202020;
+	border: none;
+	margin: 30px auto 0 auto;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.aboutme__container {
+	width: auto;
+}
+
+.aboutme__container h2 {
+	font-family: 'Rubik Mono One', sans-serif;
+	font-size: 3rem;
+	word-wrap: break-word;
+	font-weight: 400;
+	text-align: start;
+	color: rgb(53, 52, 52);
+	text-shadow: -4px 2px #dfdfdf;
+}

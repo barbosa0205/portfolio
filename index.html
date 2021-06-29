@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<title>@barbosa0205</title>
+		<link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="./src/styles/index.css" />
+		<script
+			src="https://kit.fontawesome.com/47d0b5dd24.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+	</head>
+	<body>
+		<nav class="sidebar">
+			<div class="toggle-night">
+				<i class="fas fa-moon"></i>
+			</div>
+			<div class="main-links">
+				<a href="#home">Inicio</a>
+				<a href="#about-me">Sobre Mi</a>
+				<a href="#proyects">Proyectos</a>
+				<a href="#contacto">Contacto</a>
+			</div>
+		</nav>
+		<main id="main">
+			<section class="home__container">
+				<header class="main-header">
+					<i
+						id="btn-menu"
+						class="
+							fas
+							fa-bars
+							menu
+							animate__animated animate__zoomIn animate__faster
+						"
+					></i>
+				</header>
+				<div class="home">
+					<h1>Hola! Soy José Luis Barbosa, Desarrollador Web FrontEnd</h1>
+					<img src="./src/resources/Coding-rafiki-black.svg" alt="programmer" />
+					<button
+						id="proyects"
+						class="wow animate__animated animate__zoomIn animate__fast"
+					>
+						PROYECTOS
+					</button>
+				</div>
+			</section>
+			<section class="aboutme__container">
+				<h2 class="wow animate__animated animate__fadeInUp">Sobre Mi</h2>
+			</section>
+		</main>
+		<script src="./src/menu.js"></script>
+		<script src="src/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>
