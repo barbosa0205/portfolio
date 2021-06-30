@@ -37,8 +37,13 @@
 	border-right: 1px solid #e7e7e7;
 }
 
+main {
+	align-items: center;
+}
+
 .home__container {
 	width: 100%;
+	max-width: 1325px;
 	min-height: 830px;
 	max-height: 100vh;
 	margin-right: none;
@@ -48,6 +53,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
+	height: 95vh;
 }
 
 .h1-container {
@@ -63,4 +69,25 @@
 	width: 50%;
 	max-width: 600px;
 	animation-duration: 1.3s;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.btn-container button {
+	width: 210px;
+	height: 70px;
+}
+
+.aboutme__container {
+	width: 100%;
+}
+
+.aboutme {
+	display: flex;
+	align-items: center;
+	width: 90%;
 }

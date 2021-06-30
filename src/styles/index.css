@@ -145,8 +145,8 @@ a {
 }
 
 .aboutme__container {
-	width: 100%;
-	border-radius: 15px;
+	width: auto;
+	min-width: 280px;
 }
 
 .aboutme {
@@ -157,14 +157,20 @@ a {
 }
 
 .aboutme {
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
 }
 
 .aboutme h2 {
 	margin-top: 50px;
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 3rem;
+	word-wrap: break-word;
 	font-weight: 400;
+	text-align: start;
 	color: rgb(53, 52, 52);
 	text-shadow: -4px 2px #dfdfdf;
 }
