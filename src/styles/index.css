@@ -21,14 +21,14 @@ body {
 
 a {
 	text-decoration: none;
-	color: #202020;
+	color: #353434;
 	font-size: 1.6rem;
 }
 
 .sidebar {
 	width: 60%;
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: -65%;
 	transition: 0.4s;
@@ -94,7 +94,7 @@ a {
 
 .home__container {
 	width: auto;
-	height: auto;
+	min-width: 280px;
 }
 
 .home {
@@ -103,8 +103,7 @@ a {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 40px;
-	min-height: 710px;
-	height: auto;
+	min-height: 720px;
 }
 
 .home h1 {
@@ -113,7 +112,7 @@ a {
 	word-wrap: break-word;
 	font-weight: 400;
 	text-align: start;
-	color: rgb(53, 52, 52);
+	color: #353434;
 	text-shadow: -4px 2px #dfdfdf;
 
 	animation: slideInLeft;
@@ -128,27 +127,44 @@ a {
 	animation-duration: 1.1s;
 }
 
-.home button {
+.btn-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.btn-container button {
 	width: 120px;
 	font-size: 1.8rem;
 	color: #ffffff;
 	background-color: #202020;
 	border: none;
-	margin: 30px auto 0 auto;
+	margin: 50px auto 0 auto;
 	padding: 10px;
 	border-radius: 4px;
 }
 
 .aboutme__container {
-	width: auto;
+	width: 100%;
+	border-radius: 15px;
 }
 
-.aboutme__container h2 {
+.aboutme {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.aboutme {
+	width: 100%;
+}
+
+.aboutme h2 {
+	margin-top: 50px;
 	font-family: 'Rubik Mono One', sans-serif;
 	font-size: 3rem;
-	word-wrap: break-word;
 	font-weight: 400;
-	text-align: start;
 	color: rgb(53, 52, 52);
 	text-shadow: -4px 2px #dfdfdf;
 }

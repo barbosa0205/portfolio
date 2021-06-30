@@ -10,6 +10,16 @@
 		<title>@barbosa0205</title>
 		<link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
 		<link rel="stylesheet" href="./src/styles/index.css" />
+		<link
+			rel="stylesheet"
+			media="(min-width: 600px)"
+			href="./src/styles/tablet.css"
+		/>
+		<link
+			rel="stylesheet"
+			media="(min-width: 1030px)"
+			href="./src/styles/pc.css"
+		/>
 		<script
 			src="https://kit.fontawesome.com/47d0b5dd24.js"
 			crossorigin="anonymous"
@@ -48,18 +58,24 @@
 					></i>
 				</header>
 				<div class="home">
-					<h1>Hola! Soy José Luis Barbosa, Desarrollador Web FrontEnd</h1>
+					<div class="h1-container">
+						<h1>Hola! Soy José Luis Barbosa, Desarrollador Web FrontEnd</h1>
+					</div>
 					<img src="./src/resources/Coding-rafiki-black.svg" alt="programmer" />
-					<button
-						id="proyects"
-						class="wow animate__animated animate__zoomIn animate__fast"
-					>
-						PROYECTOS
-					</button>
+					<div class="btn-container">
+						<button
+							id="proyects"
+							class="wow animate__animated animate__zoomIn animate__fast"
+						>
+							PROYECTOS
+						</button>
+					</div>
 				</div>
 			</section>
 			<section class="aboutme__container">
-				<h2 class="wow animate__animated animate__fadeInUp">Sobre Mi</h2>
+				<div class="aboutme">
+					<h2 class="wow animate__animated animate__fadeIn">Sobre Mi</h2>
+				</div>
 			</section>
 		</main>
 		<script src="./src/menu.js"></script>
