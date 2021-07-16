@@ -1,87 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-		/>
-		<title>@barbosa0205</title>
-		<link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
-		<link rel="stylesheet" href="./src/styles/index.css" />
-		<link
-			rel="stylesheet"
-			media="(min-width: 768px)"
-			href="./src/styles/tablet.css"
-		/>
-		<link
-			rel="stylesheet"
-			media="(min-width: 1030px)"
-			href="./src/styles/pc.css"
-		/>
-		<script
-			src="https://kit.fontawesome.com/47d0b5dd24.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
-	</head>
-	<body>
-		<nav class="sidebar">
-			<div class="toggle-night">
-				<i class="fas fa-moon"></i>
-			</div>
-			<div class="main-links">
-				<a href="#home">Inicio</a>
-				<a href="#about-me">Sobre Mi</a>
-				<a href="#proyects">Proyectos</a>
-				<a href="#contacto">Contacto</a>
-			</div>
-		</nav>
-		<main id="main">
-			<section class="home__container">
-				<header class="main-header">
-					<i
-						id="btn-menu"
-						class="
-							fas
-							fa-bars
-							menu
-							animate__animated animate__zoomIn animate__faster
-						"
-					></i>
-				</header>
-				<div class="home">
-					<div class="h1-container">
-						<h1>Hola! Soy José Luis Barbosa, Desarrollador Web FrontEnd</h1>
-					</div>
-					<img src="./src/resources/Coding-rafiki-black.svg" alt="programmer" />
-					<div class="btn-container">
-						<button
-							id="proyects"
-							class="wow animate__animated animate__zoomIn animate__fast"
-						>
-							PROYECTOS
-						</button>
-					</div>
-				</div>
-			</section>
-			<section class="aboutme__container">
-				<div class="aboutme">
-					<h2 class="wow animate__animated animate__fadeIn">Sobre Mi</h2>
-				</div>
-			</section>
-		</main>
-		<script src="./src/menu.js"></script>
-		<script src="src/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>@barbosa0205</title>
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./src/styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1030px)"
+      href="./src/styles/pc.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/47d0b5dd24.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="toggle-night">
+        <i class="fas fa-moon"></i>
+      </div>
+      <div class="main-links">
+        <a href="#home">Inicio</a>
+        <a href="#about-me">Sobre Mi</a>
+        <a href="#proyects">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+    <header class="main-header">
+      <i
+        id="btn-menu"
+        class="
+					fas
+					fa-bars
+					menu
+					animate__animated animate__zoomIn animate__faster
+				"
+      ></i>
+    </header>
+    <main id="main">
+      <section id="home" class="home__container">
+        <div class="home">
+          <div class="h1-container">
+            <h1 class="wow main-title">
+              Hola! Soy José Luis Barbosa, Desarrollador Web FrontEnd
+            </h1>
+          </div>
+          <img
+            class="wow"
+            src="./src/resources/Coding-rafiki-black.svg"
+            alt="programmer"
+          />
+          <div class="btn-container">
+            <button
+              href="proyects"
+              class="wow animate__animated animate__zoomIn animate__fast"
+            >
+              PROYECTOS
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="about-me" class="aboutme__container">
+        <div class="aboutme">
+          <h2 class="main-title wow animate__animated animate__fadeIn">
+            Sobre Mi
+          </h2>
+          <article
+            class="biography-container wow animate__animated animate__fadeInUp"
+          >
+            <img src="./src/resources/Devices-amico.svg" alt="devices" />
+            <p class="sub-title">
+              Soy un desarrollador Web FrontEnd Apasionado por el aprendizaje de
+              las mas nuevas tecnologias y estandares web.
+            </p>
+          </article>
+          <div class="technologies-container">
+            <article
+              class="technologies-slider wow animate__animated animate__slideInLeft"
+            >
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-github"></i>
+              <i class="fab fa-sass"></i>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/menu.js"></script>
+    <script src="src/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
 </html>

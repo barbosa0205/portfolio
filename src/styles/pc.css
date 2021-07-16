@@ -1,93 +1,118 @@
 .sidebar {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	width: 100%;
-	height: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
 }
 
 .toggle-night {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	width: auto;
-	height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  height: auto;
 }
 
 .toggle-night i {
-	padding: 10px 20px 10px 0px;
-	font-size: 2.5rem;
-	color: #dadada;
+  padding: 10px 20px 10px 0px;
+  font-size: 2.5rem;
+  color: #dadada;
 }
 
 .main-links {
-	display: flex;
-	flex-direction: row;
-	width: auto;
+  display: flex;
+  flex-direction: row;
+  width: auto;
 }
 .main-links a {
-	font-size: 1.4rem;
-	display: inline;
-	border: none;
-	width: 150px;
-	border-right: 1px solid #e7e7e7;
+  font-size: 1.4rem;
+  display: inline;
+  border: none;
+  width: 150px;
+  border-right: 1px solid #e7e7e7;
 }
 .main-links a:first-child {
-	border-bottom: none;
-	border-right: 1px solid #e7e7e7;
+  border-bottom: none;
+  border-right: 1px solid #e7e7e7;
 }
 
 main {
-	align-items: center;
+  align-items: center;
 }
 
 .home__container {
-	width: 100%;
-	max-width: 1325px;
-	min-height: 830px;
-	max-height: 100vh;
-	margin-right: none;
+  width: 100%;
+  max-width: 1325px;
+  min-height: 830px;
+  max-height: 100vh;
+  margin-right: none;
 }
 
 .home {
-	align-items: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	height: 95vh;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 95vh;
 }
 
 .h1-container {
-	width: 50%;
+  width: 50%;
 }
 
 .h1-container h1 {
-	animation-duration: 1.3s;
-	text-align: unset;
+  animation-duration: 1.3s;
+  text-align: unset;
 }
 
 .home img {
-	width: 50%;
-	max-width: 600px;
-	animation-duration: 1.3s;
+  width: 50%;
+  max-width: 600px;
+  animation-duration: 1.3s;
 }
 
 .btn-container {
-	display: flex;
-	justify-content: center;
-	max-width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .btn-container button {
-	width: 210px;
-	height: 70px;
+  width: 210px;
+  height: 70px;
 }
 
 .aboutme__container {
-	width: 100%;
+  width: 100%;
 }
 
 .aboutme {
-	display: flex;
-	align-items: center;
-	width: 90%;
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.biography-container {
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+}
+
+.biography-container img {
+  max-width: 50%;
+}
+
+.sub-title {
+  max-width: 50%;
+  font-size: 2.4rem;
+}
+
+.technologies-container {
+  overflow-x: none;
+  overscroll-behavior-x: none;
+  scroll-snap-type: x none;
+}
+
+.technologies-slider {
+  justify-content: center;
 }

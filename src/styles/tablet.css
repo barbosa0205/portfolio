@@ -1,68 +1,82 @@
 .main-header {
-	display: none;
+  display: none;
 }
 
 .sidebar {
-	left: 0;
-	width: auto;
-	transition: 0.4s;
+  left: 0;
+  width: auto;
+  transition: 0.4s;
 }
 
 .sidebar a {
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .toggle-night i {
-	font-size: 2.8em;
+  font-size: 2.8em;
 }
 
 main {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .home__container {
-	width: 80%;
-	min-height: 920px;
-	margin: 0;
-	margin-top: 40px;
+  width: 80%;
+  min-height: 920px;
+  margin: 0;
+  margin-top: 40px;
 }
 
 .home {
-	max-width: 1325px;
-	min-height: 770px;
+  max-width: 1325px;
+  min-height: 770px;
 }
 
 .home h1 {
-	font-size: 5rem;
+  font-size: 5rem;
 }
 
 .home img {
-	max-width: 500px;
+  max-width: 500px;
 }
 
 .btn-container {
-	display: flex;
-	justify-content: start;
-	max-width: 500px;
+  display: flex;
+  justify-content: start;
+  max-width: 500px;
 }
 
 .btn-container button {
-	width: 155px;
-	height: 50px;
+  width: 155px;
+  height: 50px;
 }
 
 .aboutme__container {
-	width: 80%;
+  width: 80%;
 }
 
 .aboutme {
-	display: block;
+  display: block;
 }
 
 .aboutme h2 {
-	max-width: 500px;
-	font-size: 5rem;
-	text-align: center;
+  max-width: 500px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.biography-container {
+  display: flex;
+  align-items: center;
+}
+
+.biography-container img {
+  max-width: 50%;
+}
+
+.sub-title {
+  max-width: 50%;
+  font-size: 2rem;
 }
