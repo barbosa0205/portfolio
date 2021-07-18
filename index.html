@@ -47,12 +47,7 @@
     <header class="main-header">
       <i
         id="btn-menu"
-        class="
-					fas
-					fa-bars
-					menu
-					animate__animated animate__zoomIn animate__faster
-				"
+        class="fas fa-bars menu animate__animated animate__zoomIn"
       ></i>
     </header>
     <main id="main">
@@ -71,7 +66,7 @@
           <div class="btn-container">
             <button
               href="proyects"
-              class="wow animate__animated animate__zoomIn animate__fast"
+              class="project-btn wow animate__animated animate__zoomIn"
             >
               PROYECTOS
             </button>
@@ -83,29 +78,63 @@
           <h2 class="main-title wow animate__animated animate__fadeIn">
             Sobre Mi
           </h2>
-          <article
-            class="biography-container wow animate__animated animate__fadeInUp"
-          >
-            <img src="./src/resources/Devices-amico.svg" alt="devices" />
-            <p class="sub-title">
-              Soy un desarrollador Web FrontEnd Apasionado por el aprendizaje de
-              las mas nuevas tecnologias y estandares web.
-            </p>
-          </article>
+          <div class="invisible-bliography">
+            <article
+              class="
+                biography-container
+                wow
+                animate__animated animate__fadeInUp
+              "
+            >
+              <img
+                id="biography-img"
+                src="./src/resources/Devices-amico.svg"
+                alt="devices"
+              />
+              <p class="sub-title">
+                Soy un desarrollador y programador Web FrontEnd Apasionado por
+                el aprendizaje de las mas nuevas tecnologias y estandares web.
+              </p>
+            </article>
+          </div>
           <div class="technologies-container">
             <article
-              class="technologies-slider wow animate__animated animate__slideInLeft"
+              class="
+                technologies-slider
+                wow
+                animate__animated animate__slideInLeft
+              "
             >
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js-square"></i>
-              <i class="fab fa-github"></i>
-              <i class="fab fa-sass"></i>
+              <div class="technologies html">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="technologies css">
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="technologies js">
+                <i class="fab fa-js"></i>
+                <p>JS</p>
+              </div>
+              <div class="technologies git">
+                <i class="fab fa-git-alt"></i>
+                <p>Git</p>
+              </div>
+              <div class="technologies github">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+              </div>
+              <div class="technologies sass">
+                <i class="fab fa-sass"></i>
+                <p>Sass</p>
+              </div>
             </article>
           </div>
         </div>
       </section>
     </main>
+    <script src="./src/index.js"></script>
     <script src="./src/menu.js"></script>
     <script src="src/wow.min.js"></script>
     <script>

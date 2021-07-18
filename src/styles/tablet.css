@@ -35,7 +35,7 @@ main {
 }
 
 .home h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .home img {
@@ -44,8 +44,9 @@ main {
 
 .btn-container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .btn-container button {
@@ -58,7 +59,7 @@ main {
 }
 
 .aboutme {
-  display: block;
+  display: flex;
 }
 
 .aboutme h2 {
@@ -66,10 +67,15 @@ main {
   font-size: 5rem;
   text-align: center;
 }
-
+.invisible-bliography {
+  display: block;
+}
 .biography-container {
+  max-width: 95%;
   display: flex;
   align-items: center;
+  box-shadow: -8px 6px 1px #dbdbdb, -8px -1px 1px #dbdbdb, 1px 6px 1px #dbdbdb,
+    1px -1px 1px #dbdbdb;
 }
 
 .biography-container img {

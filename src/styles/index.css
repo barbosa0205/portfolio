@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("/src/fonts/JetBrainsMono-Regular.ttf");
+  src: url("../fonts/JetBrainsMono-Regular.ttf");
 }
 
 * {
@@ -11,6 +11,30 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #969699;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 body {
@@ -54,6 +78,7 @@ a {
   padding: 10px;
   font-size: 2.5rem;
   color: #dadada;
+  cursor: pointer;
 }
 
 .main-links {
@@ -124,6 +149,8 @@ a {
 } */
 
 .home img {
+  max-width: 400px;
+  margin: 0 auto;
   animation: slideInRight;
   animation-duration: 1.1s;
 }
@@ -134,7 +161,7 @@ a {
   width: 100%;
 }
 
-.btn-container button {
+.project-btn {
   width: 120px;
   font-size: 1.8rem;
   color: #ffffff;
@@ -143,6 +170,7 @@ a {
   margin: 50px auto 0 auto;
   padding: 10px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .aboutme__container {
@@ -154,21 +182,37 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
   min-height: 720px;
   max-height: 100vh;
   margin: 0 auto;
   margin-top: 40px;
 }
 
-.biography-container {
+.invisible-bliography {
+  display: flex;
+  justify-content: center;
   width: 100%;
+}
+
+.biography-container {
+  width: 90%;
   max-width: 500px;
   margin-top: 100px;
   padding: 5px;
   border-radius: 4px;
-  box-shadow: -5px 4px 1px #dbdbdb, -4px -1px 1px #dbdbdb, 1px 4px 1px #dbdbdb,
+  box-shadow: -5px 4px 1px #dbdbdb, -5px -1px 1px #dbdbdb, 1px 4px 1px #dbdbdb,
     1px -1px 1px #dbdbdb;
+}
+
+.biography-img-hover {
+  padding: 10px 0;
+  transition: 0.7s;
+}
+
+.biography-img {
+  padding: 0;
+  transition: 0.7s;
 }
 
 .sub-title {
@@ -184,15 +228,28 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .technologies-slider {
   display: flex;
   width: 100%;
+  height: 220px;
   margin-top: 50px;
   overflow-x: scroll;
+  overflow-y: hidden;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technologies p {
+  font-size: 1.8rem;
 }
 
 .technologies-slider::-webkit-scrollbar {
@@ -225,27 +282,42 @@ a {
   font-size: 12rem;
   color: #353434;
 }
-.technologies-slider i:first-child:hover {
-  transition: 0.5s;
-  color: #ff7030;
+
+.technologies p {
+  font-weight: bold;
 }
 
-.technologies-slider i:nth-child(2):hover {
+.html i:hover,
+.html:hover {
+  transition: 0.5s;
+  color: #fc824c;
+}
+
+.css i:hover,
+.css:hover {
   transition: 0.5s;
   color: #4299ee;
 }
 
-.technologies-slider i:nth-child(3):hover {
+.js i:hover,
+.js:hover {
   transition: 0.5s;
-  color: #fae855;
+  color: #f9e268;
 }
 
-.technologies-slider i:nth-child(4):hover {
+.git i:hover,
+.git:hover {
   transition: 0.5s;
-  color: #ff7e00;
+  color: #f99e46;
 }
 
-.technologies-slider i:last-child:hover {
+.github i:hover,
+.github:hover {
+  transition: 0.5s;
+  color: #41b85f;
+}
+.sass i:hover,
+.sass:hover {
   transition: 0.5s;
   color: #ff5194;
 }

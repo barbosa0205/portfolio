@@ -92,6 +92,10 @@ main {
   width: 90%;
 }
 
+.invisible-bliography {
+  display: flex;
+}
+
 .biography-container {
   display: flex;
   align-items: center;
