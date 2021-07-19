@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
     <link
       rel="stylesheet"
-      media="(min-width: 768px)"
+      media="(min-width: 650px)"
       href="./src/styles/tablet.css"
     />
     <link
@@ -64,15 +64,13 @@
             alt="programmer"
           />
           <div class="btn-container">
-            <button
-              href="proyects"
-              class="project-btn wow animate__animated animate__zoomIn"
-            >
-              PROYECTOS
-            </button>
+            <div class="project-btn wow animate__animated animate__zoomIn">
+              <a href="#proyects"> PROYECTOS </a>
+            </div>
           </div>
         </div>
       </section>
+
       <section id="about-me" class="aboutme__container">
         <div class="aboutme">
           <h2 class="main-title wow animate__animated animate__fadeIn">
@@ -133,10 +131,18 @@
           </div>
         </div>
       </section>
+
+      <section id="proyects" class="proyects-container">
+        <div class="proyects">
+          <h2 class="main-title wow animate__animated animate__fadeIn">
+            MIS PROYECTOS
+          </h2>
+        </div>
+      </section>
     </main>
     <script src="./src/index.js"></script>
     <script src="./src/menu.js"></script>
-    <script src="src/wow.min.js"></script>
+    <script src="./src/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
