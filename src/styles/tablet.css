@@ -92,8 +92,6 @@ main {
   width: 80%;
 }
 
-.proyects h2 {
-  max-width: 500px;
-  font-size: 5rem;
-  margin-top: 110px;
+.proyects-container h2 {
+  font-size: 4rem;
 }

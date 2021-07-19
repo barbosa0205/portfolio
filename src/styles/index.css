@@ -56,8 +56,9 @@ a {
   top: 0;
   left: -65%;
   transition: 0.4s;
-  background: #f9f9f9;
-  box-shadow: 0 0 10px 0 #cccccc;
+  background: hsla(0, 0%, 98%, 0.979);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 5px 0 #cccccc;
   z-index: 1000;
 }
 
@@ -107,7 +108,8 @@ a {
   display: flex;
   justify-content: flex-end;
   width: auto;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.603);
+  backdrop-filter: blur(2px);
   min-width: 280px;
 }
 
@@ -171,6 +173,7 @@ a {
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: -5px 3px 1px #6d6b6b;
 }
 
 .project-btn a {
@@ -331,7 +334,7 @@ a {
 
 .proyects-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: auto;
   min-width: 280px;
   height: 100vh;
@@ -344,10 +347,27 @@ a {
 
 .proyects {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
   width: 100%;
   min-height: 720px;
   max-height: 100vh;
   margin: 0 auto;
+}
+
+.proyect-card {
+  width: 90%;
+  height: 300px;
+  max-width: 320px;
+  margin: 10px 0;
+  border-radius: 4px;
+  box-shadow: -5px 3px 1px #dbdbdb, -5px -1px 1px #dbdbdb, 1px 3px 1px #dbdbdb,
+    1px -1px 1px #dbdbdb;
+}
+
+.proyect-card:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: -5px 3px 1px #a8a8a89c, -5px -1px 1px #a8a8a89c,
+    1px 3px 1px #a8a8a89c, 1px -1px 1px #a8a8a89c;
 }
