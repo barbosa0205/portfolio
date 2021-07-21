@@ -30,12 +30,26 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
   <body>
+    <div id="iframe-container" class="iframe-container hidden">
+      <div class="close">
+        <a id="close-iframe"><i class="fas fa-times-circle"></i></a>
+      </div>
+      <iframe id="iframe" src="" width="90%"></iframe>
+    </div>
     <nav class="sidebar">
       <div class="toggle-night">
         <i class="fas fa-moon"></i>
@@ -142,22 +156,55 @@
         <div class="proyects">
           <article
             class="proyect-card wow animate__animated animate__fadeInRight"
-          ></article>
+          >
+            <div class="proyect-card__content">
+              <div class="proyect-card__image calc"></div>
+              <div class="proyect-card__contain">
+                <h2>Minimalist Calc</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis, neque?
+                </p>
+              </div>
+            </div>
+            <div class="proyect-card__links">
+              <a
+                href="https://github.com/barbosa0205/Minimalist-Calculator"
+                target="”_blank”"
+                >Repository</a
+              >
+              <a
+                href="https://barbosa0205.github.io/Minimalist-Calculator/"
+                target="”_blank”"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a><i id="iframe-calc" class="far fa-window-maximize"></i></a>
+            </div>
+          </article>
+
           <article
             class="proyect-card wow animate__animated animate__fadeInRight"
-          ></article>
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          ></article>
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          ></article>
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          ></article>
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          ></article>
+          >
+            <div class="proyect-card__content">
+              <div class="proyect-card__image pokedex"></div>
+              <div class="proyect-card__contain">
+                <h2>Pokedex</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Officiis, neque?
+                </p>
+              </div>
+            </div>
+            <div class="proyect-card__links">
+              <a href="https://github.com/barbosa0205/Pokedex" target="”_blank”"
+                >Repository</a
+              >
+              <a href="https://barbosa0205.github.io/Pokedex/" target="”_blank”"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+              <a><i id="iframe-pokedex" class="far fa-window-maximize"></i></a>
+            </div>
+          </article>
         </div>
       </section>
     </main>

@@ -49,6 +49,54 @@ a {
   font-size: 1.6rem;
 }
 
+.iframe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 3000;
+}
+
+iframe {
+  max-width: 768px;
+  height: 768px;
+  min-height: 400px;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  max-width: 768px;
+  height: 40px;
+}
+
+.close a {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.close i {
+  font-size: 2.5rem;
+}
+
+.visible {
+  transition: 0.5s ease;
+  visibility: visible;
+}
+.hidden {
+  transition: 0.5s ease;
+  visibility: hidden;
+}
+
 .sidebar {
   width: 60%;
   height: 100vh;
@@ -199,6 +247,10 @@ a {
   margin-top: 40px;
 }
 
+.aboutme h2 {
+  margin-top: 60px;
+}
+
 .invisible-bliography {
   display: flex;
   justify-content: center;
@@ -226,12 +278,10 @@ a {
 }
 
 .sub-title {
-  font-family: "Rubik Mono One", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5rem;
   text-align: start;
   color: #353434;
-  text-shadow: -4px 2px #dfdfdf;
 }
 
 .technologies-container {
@@ -338,11 +388,12 @@ a {
   width: auto;
   min-width: 280px;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .proyects-container h2 {
   text-align: center;
+  margin-top: 60px;
 }
 
 .proyects {
@@ -351,19 +402,88 @@ a {
   justify-content: center;
   column-gap: 20px;
   width: 100%;
-  min-height: 720px;
   max-height: 100vh;
   margin: 0 auto;
 }
 
 .proyect-card {
-  width: 90%;
-  height: 300px;
-  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  min-width: 320px;
+  max-width: 550px;
   margin: 10px 0;
+  padding: 5px 0 5px 5px;
   border-radius: 4px;
   box-shadow: -5px 3px 1px #dbdbdb, -5px -1px 1px #dbdbdb, 1px 3px 1px #dbdbdb,
     1px -1px 1px #dbdbdb;
+}
+
+.proyect-card__content {
+  display: flex;
+  width: 100%;
+}
+
+.proyect-card__image {
+  min-width: 130px;
+  min-height: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.calc {
+  background-image: url("../resources/calculator.png");
+}
+.pokedex {
+  background-image: url("../resources/pokedex.png");
+}
+
+.proyect-card__contain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.proyect-card__contain h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #353434;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.proyect-card__contain p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+}
+
+.proyect-card__links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.proyect-card__links a {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.proyect-card__links a:first-child {
+  height: 25px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.4rem;
+  background: #353434;
+  color: #fff;
 }
 
 .proyect-card:hover {

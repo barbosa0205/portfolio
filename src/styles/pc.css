@@ -99,6 +99,10 @@ main {
   align-items: center;
 }
 
+.aboutme h2 {
+  margin-top: 100px;
+}
+
 .invisible-bliography {
   display: flex;
 }
@@ -129,5 +133,6 @@ main {
 }
 
 .proyects-container {
-  padding-top: 100px;
+  width: 100%;
+  margin: 0;
 }

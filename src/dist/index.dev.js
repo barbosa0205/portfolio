@@ -1,23 +1,25 @@
-const biographyImg = document.getElementById("biography-img");
-const $iframe = document.getElementById("iframe");
-const $iframeContainer = document.getElementById("iframe-container");
-const $closeIframe = document.getElementById("close-iframe");
-const $iframeCalc = document.getElementById("iframe-calc");
-const $iframePokedex = document.getElementById("iframe-pokedex");
+"use strict";
 
-biographyImg.onmouseover = () => {
+var biographyImg = document.getElementById("biography-img");
+var $iframe = document.getElementById("iframe");
+var $iframeContainer = document.getElementById("iframe-container");
+var $closeIframe = document.getElementById("close-iframe");
+var $iframeCalc = document.getElementById("iframe-calc");
+var $iframePokedex = document.getElementById("iframe-pokedex");
+
+biographyImg.onmouseover = function () {
   biographyImg.src = "./src/resources/Devices-amico-hover.svg";
   biographyImg.classList.add("biography-img-hover");
   biographyImg.classList.remove("biography-img");
 };
 
-biographyImg.onmouseout = () => {
+biographyImg.onmouseout = function () {
   biographyImg.src = "./src/resources/Devices-amico.svg";
   biographyImg.classList.add("biography-img");
   biographyImg.classList.remove("biography-img-hover");
 };
 
-const openIframe = (url) => {
+var openIframe = function openIframe(url) {
   if (url === "") {
     $iframeContainer.classList.remove("visible");
     $iframeContainer.classList.add("hidden");
@@ -29,14 +31,12 @@ const openIframe = (url) => {
   }
 };
 
-$iframeCalc.addEventListener("click", () => {
+$iframeCalc.addEventListener("click", function () {
   openIframe("https://barbosa0205.github.io/Minimalist-Calculator/");
 });
-
-$iframePokedex.addEventListener("click", () => {
+$iframePokedex.addEventListener("click", function () {
   openIframe("https://barbosa0205.github.io/Pokedex/");
 });
-
-$closeIframe.addEventListener("click", () => {
+$closeIframe.addEventListener("click", function () {
   openIframe("");
 });
