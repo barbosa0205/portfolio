@@ -136,3 +136,17 @@ main {
   width: 100%;
   margin: 0;
 }
+
+footer {
+  padding-left: 0;
+}
+
+.form input {
+  width: 400px;
+  height: 45px;
+}
+
+textarea {
+  width: 500px;
+  height: 220px;
+}

@@ -112,3 +112,17 @@ main {
 .proyect-card__contain h2 {
   font-size: 2.2rem;
 }
+
+footer {
+  padding-left: 130px;
+}
+
+.form input {
+  width: 350px;
+  height: 35px;
+}
+
+textarea {
+  width: 400px;
+  height: 180px;
+}
