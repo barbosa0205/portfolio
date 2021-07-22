@@ -215,8 +215,9 @@
             <form
               id="form"
               class="form"
-              action="./src/php/form.php"
+              action="https://formsubmit.co/barbosa02058@gmail.com"
               method="POST"
+              required
             >
               <div class="datos">
                 <input type="text" name="name" placeholder="Nombre Completo" />
@@ -224,6 +225,7 @@
                   type="email"
                   placeholder="Correo Electronico"
                   name="email"
+                  required
                 />
               </div>
               <div class="message">
@@ -240,6 +242,13 @@
               <div class="submit-form">
                 <button type="submit">Enviar</button>
               </div>
+              <input type="hidden" name="_next" value="/index.html" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Tu correo se a enviado correctamente. Este se respondera a la brevedad."
+              />
             </form>
           </div>
           <div class="social"></div>
