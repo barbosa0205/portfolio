@@ -58,7 +58,7 @@
         <a href="#home">Inicio</a>
         <a href="#about-me">Sobre Mi</a>
         <a href="#proyects">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#contact">Contacto</a>
       </div>
     </nav>
     <header class="main-header">
@@ -207,14 +207,19 @@
           </article>
         </div>
       </section>
-      <footer>
+      <footer id="contact">
+        <a id="mailto" href="mailto:barbosa02058@gmail.com">CLICK</a>
         <div class="footer-container">
           <div class="contact">
             <h2>CONTACTAME</h2>
-            <form id="form" class="form">
+            <form id="form" class="form" action=".form.php" method="POST">
               <div class="datos">
-                <input type="text" placeholder="Nombre Completo" />
-                <input type="email" placeholder="Correo Electronico" />
+                <input type="text" name="name" placeholder="Nombre Completo" />
+                <input
+                  type="email"
+                  placeholder="Correo Electronico"
+                  name="email"
+                />
               </div>
               <div class="message">
                 <textarea
@@ -222,8 +227,13 @@
                   id=""
                   cols="30"
                   rows="10"
+                  name="message"
                   placeholder="Tu Mensaje"
+                  required
                 ></textarea>
+              </div>
+              <div class="submit-form">
+                <button type="submit">Enviar</button>
               </div>
             </form>
           </div>

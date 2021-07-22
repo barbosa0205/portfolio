@@ -21,6 +21,7 @@ const openIframe = (url) => {
   if (url === "") {
     $iframeContainer.classList.remove("visible");
     $iframeContainer.classList.add("hidden");
+    $iframe.src = "";
   } else {
     $iframe.src = url;
     $iframeContainer.classList.add("visible");

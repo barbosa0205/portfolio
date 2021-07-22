@@ -150,3 +150,8 @@ textarea {
   width: 500px;
   height: 220px;
 }
+
+.submit-form button {
+  width: 140px;
+  height: 40px;
+}
