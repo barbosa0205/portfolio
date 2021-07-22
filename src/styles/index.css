@@ -3,6 +3,15 @@
   src: url("../../src/fonts/JetBrainsMono-Regular.ttf");
 }
 
+:root {
+  --primary-dark: #353434;
+  --secondary-dark: #202020;
+  --primary-white: #fff;
+  --secondary-white: #fafafafa;
+  --primary-gray: #ebebeb;
+  --secondary-gray: #dbdbdbdb;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -45,7 +54,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #353434;
+  color: var(--primary-dark);
   font-size: 1.6rem;
 }
 
@@ -103,8 +112,7 @@ iframe {
   top: 0;
   left: -65%;
   transition: 0.4s;
-  background: hsla(0, 0%, 98%, 0.979);
-  backdrop-filter: blur(10px);
+  background: var(--secondary-white);
   box-shadow: 0 0 5px 0 #cccccc;
   z-index: 1000;
 }
@@ -125,7 +133,7 @@ iframe {
 .toggle-night i {
   padding: 10px;
   font-size: 2.5rem;
-  color: #dadada;
+  color: var(--secondary-gray);
   cursor: pointer;
 }
 
@@ -155,7 +163,7 @@ iframe {
   display: flex;
   justify-content: flex-end;
   width: auto;
-  background: rgba(255, 255, 255, 0.603);
+  background: #ffffff9a;
   backdrop-filter: blur(2px);
   min-width: 280px;
   z-index: 4000;
@@ -192,7 +200,7 @@ main {
   word-wrap: break-word;
   font-weight: 400;
   text-align: start;
-  color: #353434;
+  color: var(--primary-dark);
   text-shadow: -4px 2px #dfdfdf;
 
   animation: slideInLeft;
@@ -220,7 +228,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 120px;
-  background-color: #202020;
+  background-color: var(--secondary-dark);
   margin: 50px auto 0 auto;
   padding: 10px;
   border-radius: 4px;
@@ -230,7 +238,7 @@ main {
 
 .project-btn a {
   font-size: 1.8rem;
-  color: #ffffff;
+  color: var(--primary-white);
   text-align: center;
 }
 
@@ -267,8 +275,9 @@ main {
   margin-top: 100px;
   padding: 5px;
   border-radius: 4px;
-  box-shadow: -5px 4px 1px #dbdbdb, -5px -1px 1px #dbdbdb, 1px 4px 1px #dbdbdb,
-    1px -1px 1px #dbdbdb;
+  box-shadow: -5px 4px 1px var(--secondary-gray),
+    -5px -1px 1px var(--secondary-gray), 1px 4px 1px var(--secondary-gray),
+    1px -1px 1px var(--secondary-gray);
 }
 
 .biography-img-hover {
@@ -285,7 +294,7 @@ main {
   font-family: "Kanit", sans-serif;
   font-size: 2.5rem;
   text-align: start;
-  color: #353434;
+  color: var(--primary-dark);
 }
 
 .technologies-container {
@@ -344,7 +353,7 @@ main {
   scroll-snap-align: center;
   margin: 30px;
   font-size: 12rem;
-  color: #353434;
+  color: var(--primary-dark);
 }
 
 .technologies p {
@@ -418,8 +427,9 @@ main {
   margin: 10px 0px;
   padding: 5px 0 5px 5px;
   border-radius: 4px;
-  box-shadow: -5px 3px 1px #dbdbdb, -5px -1px 1px #dbdbdb, 1px 3px 1px #dbdbdb,
-    1px -1px 1px #dbdbdb;
+  box-shadow: -5px 3px 1px var(--secondary-gray),
+    -5px -1px 1px var(--secondary-gray), 1px 3px 1px var(--secondary-gray),
+    1px -1px 1px var(--secondary-gray);
 }
 
 .proyect-card__content {
@@ -457,7 +467,7 @@ main {
 .proyect-card__contain h2 {
   font-size: 2rem;
   font-weight: 400;
-  color: #353434;
+  color: var(--primary-dark);
   font-family: "Rubik Mono One", sans-serif;
 }
 
@@ -487,8 +497,8 @@ main {
   text-align: center;
   font-family: "Kanit", sans-serif;
   font-size: 1.4rem;
-  background: #353434;
-  color: #fff;
+  background: var(--primary-dark);
+  color: var(--primary-white);
 }
 
 .proyect-card:hover {
@@ -500,7 +510,7 @@ main {
 footer {
   width: 100%;
   height: auto;
-  background: #202020;
+  background: var(--secondary-dark);
 }
 
 #mailto {
@@ -512,10 +522,6 @@ footer {
   height: 100%;
 }
 
-.social {
-  width: 100%;
-  height: 15%;
-}
 .contact {
   display: flex;
   flex-direction: column;
@@ -530,7 +536,7 @@ footer {
   font-family: "Rubik Mono One", sans-serif;
   font-weight: 400;
   font-size: 2.3rem;
-  color: #ebebeb;
+  color: var(--primary-gray);
 }
 
 .datos {
@@ -600,4 +606,21 @@ textarea::placeholder {
   font-weight: 300;
   font-size: 1.4rem;
   border-radius: 2px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  padding-bottom: 30px;
+}
+
+.social a {
+  margin: 0 15px;
+}
+
+.social i {
+  font-size: 4rem;
+  color: var(--primary-gray);
 }
