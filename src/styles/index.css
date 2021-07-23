@@ -79,6 +79,7 @@ iframe {
   max-width: 768px;
   height: 100%;
   min-height: 400px;
+  background-color: #fff;
 }
 
 .close {
@@ -433,6 +434,7 @@ main {
 }
 
 .proyect-card h2 {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
   color: var(--primary-dark);
@@ -458,6 +460,9 @@ main {
 }
 .pokedex {
   background-image: url("../resources/pokedex.png");
+}
+.rps {
+  background-image: url("../resources/rps.png");
 }
 
 .proyect-card__contain {

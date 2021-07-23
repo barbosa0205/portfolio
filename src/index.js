@@ -4,6 +4,7 @@ const $iframeContainer = document.getElementById("iframe-container");
 const $closeIframe = document.getElementById("close-iframe");
 const $iframeCalc = document.getElementById("iframe-calc");
 const $iframePokedex = document.getElementById("iframe-pokedex");
+const $iframeRps = document.getElementById("iframe-rps");
 
 biographyImg.onmouseover = () => {
   biographyImg.src = "./src/resources/Devices-amico-hover.svg";
@@ -35,6 +36,9 @@ $iframeCalc.addEventListener("click", () => {
 
 $iframePokedex.addEventListener("click", () => {
   openIframe("https://barbosa0205.github.io/Pokedex/");
+});
+$iframeRps.addEventListener("click", () => {
+  openIframe("https://barbosa0205.github.io/Paper-Rock-Scsissors/");
 });
 
 $closeIframe.addEventListener("click", () => {
