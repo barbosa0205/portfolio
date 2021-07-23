@@ -425,6 +425,7 @@ main {
   min-width: 320px;
   max-width: 550px;
   margin: 10px 0px;
+  padding: 30px 0;
   border-radius: 4px;
   box-shadow: -5px 3px 1px var(--secondary-gray),
     -5px -1px 1px var(--secondary-gray), 1px 3px 1px var(--secondary-gray),
@@ -479,13 +480,19 @@ main {
   padding-left: 5px;
 }
 
+.proyect-card__contain b {
+  font-size: 1.6rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
 .proyect-card__links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 30px;
-  margin-bottom: 10px;
 }
 
 .proyect-card__links a {
