@@ -109,8 +109,8 @@ main {
   padding: 0 30px;
 }
 
-.proyect-card__contain h2 {
-  font-size: 2.2rem;
+.proyect-card h2 {
+  font-size: 2.5rem;
 }
 
 footer {
