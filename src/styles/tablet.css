@@ -1,128 +1,131 @@
 .iframe-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .main-header {
-  display: none;
+    display: none;
 }
 
 .sidebar {
-  left: 0;
-  width: auto;
-  transition: 0.4s;
+    left: 0;
+    width: auto;
+    transition: 0.4s;
 }
 
 .sidebar a {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 .toggle-night i {
-  font-size: 2.8em;
+    font-size: 2.8em;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .home__container {
-  width: 80%;
-  min-height: 920px;
-  margin: 0;
-  margin-top: 40px;
+    width: 80%;
+    min-height: 920px;
+    margin: 0;
+    margin-top: 40px;
 }
 
 .home {
-  max-width: 1325px;
-  min-height: 770px;
+    max-width: 1325px;
+    min-height: 770px;
 }
 
 .home h1 {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 .home img {
-  max-width: 500px;
+    max-width: 500px;
 }
 
 .btn-container {
-  display: flex;
-  justify-content: center;
-  max-width: 500px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .project-btn {
-  width: 155px;
-  height: 50px;
+    width: 155px;
+    height: 50px;
 }
 
 .aboutme__container {
-  width: 80%;
+    width: 80%;
 }
 
 .aboutme {
-  display: flex;
+    display: flex;
 }
 
 .aboutme h2 {
-  max-width: 500px;
-  font-size: 5rem;
-  text-align: center;
+    max-width: 500px;
+    font-size: 5rem;
+    text-align: center;
 }
 .invisible-bliography {
-  display: block;
+    display: block;
 }
 .biography-container {
-  max-width: 95%;
-  display: flex;
-  align-items: center;
-  box-shadow: -8px 6px 1px #dbdbdb, -8px -1px 1px #dbdbdb, 1px 6px 1px #dbdbdb,
-    1px -1px 1px #dbdbdb;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    box-shadow: -8px 6px 1px #dbdbdb, -8px -1px 1px #dbdbdb, 1px 6px 1px #dbdbdb,
+        1px -1px 1px #dbdbdb;
 }
 
 .biography-container img {
-  max-width: 50%;
+    max-width: 50%;
 }
 
 .sub-title {
-  max-width: 50%;
-  font-size: 2.3rem;
+    max-width: 50%;
+    font-size: 2.3rem;
 }
 
 .proyects-container {
-  width: 80%;
-  margin: 0;
+    width: 80%;
+    margin: 0;
 }
 
 .proyects-container h2 {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 
 .proyect-card {
-  width: 100%;
+    width: 100%;
 }
 
 .proyect-card__contain p {
-  padding: 0 30px;
+    padding: 0 30px;
 }
 
 .proyect-card h2 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
+.proyect-card__tech i {
+    font-size: 3.5rem;
+}
 footer {
-  padding-left: 130px;
+    padding-left: 130px;
 }
 
 .form input {
-  width: 350px;
-  height: 35px;
+    width: 350px;
+    height: 35px;
 }
 
 textarea {
-  width: 400px;
-  height: 180px;
+    width: 400px;
+    height: 180px;
 }

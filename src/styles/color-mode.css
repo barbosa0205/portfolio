@@ -1,0 +1,87 @@
+/*NIGHT*/
+
+body.dark {
+    background: #0f0f0f;
+}
+
+body.dark main {
+    background: #141414;
+}
+
+body.dark .main-header {
+    background: #0000008c;
+    backdrop-filter: blur(2px);
+}
+body.dark .main-header i {
+    color: #f1f1f1;
+}
+
+body.dark .sidebar {
+    background: #f1f1f1;
+    box-shadow: 0 0 5px 0 #161010;
+}
+body.dark .sidebar a {
+    color: #000000;
+}
+
+body.dark .toggle-night i {
+    color: #383838;
+}
+
+body.dark .main-title {
+    color: #f1f1f1;
+    text-shadow: -4px 2px #666666;
+}
+
+body.dark .project-btn {
+    background: #f1f1f1;
+    color: #000;
+    box-shadow: -5px 3px 1px #c9c9c9;
+}
+body.dark .project-btn a {
+    color: #000;
+}
+
+body.dark .biography-container {
+    background: #2424248c;
+    box-shadow: -5px 4px 1px #f7f7f7, -5px -1px 1px #f7f7f7, 1px 4px 1px #f7f7f7,
+        1px -1px 1px #f7f7f7;
+}
+
+body.dark .biography-container p {
+    color: #f1f1f1;
+}
+
+body.dark .technologies-container div i {
+    color: #f1f1f1;
+}
+body.dark .technologies-container div p {
+    color: #f1f1f1;
+}
+
+body.dark .proyect-card {
+    box-shadow: -5px 4px 1px #f7f7f7, -5px -1px 1px #f7f7f7, 1px 4px 1px #f7f7f7,
+        1px -1px 1px #f7f7f7;
+}
+body.dark .proyect-card h2 {
+    color: #f1f1f1;
+}
+body.dark .proyect-card p {
+    color: #f1f1f1;
+}
+
+body.dark .proyect-card__tech h3 {
+    color: #f1f1f1;
+}
+
+body.dark .proyect-card__links a:first-child {
+    background-color: #f1f1f1;
+    color: #141414;
+}
+body.dark .proyect-card__links i {
+    color: #f1f1f1;
+}
+
+body.dark footer {
+    background-color: #111111;
+}

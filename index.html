@@ -1,312 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <title>@barbosa0205</title>
-    <link rel="stylesheet" href="./src/styles/normalize.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
-    <link
-      rel="stylesheet"
-      media="(min-width: 650px)"
-      href="./src/styles/tablet.css"
-    />
-    <link
-      rel="stylesheet"
-      media="(min-width: 1280px)"
-      href="./src/styles/pc.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/47d0b5dd24.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
-  <body>
-    <div id="iframe-container" class="iframe-container hidden">
-      <div class="close">
-        <a id="close-iframe"><i class="fas fa-times-circle"></i></a>
-      </div>
-      <iframe id="iframe" src="" width="90%"></iframe>
-    </div>
-    <nav class="sidebar">
-      <div class="toggle-night">
-        <i class="fas fa-moon"></i>
-      </div>
-      <div class="main-links">
-        <a href="#home">Inicio</a>
-        <a href="#about-me">Sobre Mi</a>
-        <a href="#proyects">Proyectos</a>
-        <a href="#contact">Contacto</a>
-      </div>
-    </nav>
-    <header class="main-header">
-      <i
-        id="btn-menu"
-        class="fas fa-bars menu animate__animated animate__zoomIn"
-      ></i>
-    </header>
-    <main id="main">
-      <section id="home" class="home__container">
-        <div class="home">
-          <div class="h1-container">
-            <h1 class="wow main-title">
-              Hola! Soy José Luis Barbosa, Desarrollador Web FrontEnd
-            </h1>
-          </div>
-          <img
-            class="wow"
-            src="./src/resources/Coding-rafiki-black.svg"
-            alt="programmer"
-          />
-          <div class="btn-container">
-            <div class="project-btn wow animate__animated animate__zoomIn">
-              <a href="#proyects"> PROYECTOS </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <title>@barbosa0205</title>
+        <link rel="stylesheet" href="./src/styles/normalize.css" />
+        <link rel="stylesheet" href="./src/styles/index.css" />
+        <link
+            rel="stylesheet"
+            media="(min-width: 650px)"
+            href="./src/styles/tablet.css"
+        />
+        <link
+            rel="stylesheet"
+            media="(min-width: 1280px)"
+            href="./src/styles/pc.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/47d0b5dd24.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="stylesheet" href="./src/styles/color-mode.css" />
+    </head>
+    <body>
+        <div id="iframe-container" class="iframe-container hidden">
+            <div class="close">
+                <a id="close-iframe"><i class="fas fa-times-circle"></i></a>
             </div>
-          </div>
+            <iframe id="iframe" src="" width="90%"></iframe>
         </div>
-      </section>
-
-      <section id="about-me" class="aboutme__container">
-        <div class="aboutme">
-          <h2 class="main-title wow animate__animated animate__fadeIn">
-            Sobre Mi
-          </h2>
-          <div class="invisible-bliography">
-            <article
-              class="
-                biography-container
-                wow
-                animate__animated animate__fadeInUp
-              "
-            >
-              <img
-                id="biography-img"
-                src="./src/resources/Devices-amico.svg"
-                alt="devices"
-              />
-              <p class="sub-title">
-                Soy un desarrollador y programador Web FrontEnd Apasionado por
-                el aprendizaje de las mas nuevas tecnologias y estandares web.
-              </p>
-            </article>
-          </div>
-          <div class="technologies-container">
-            <article
-              class="
-                technologies-slider
-                wow
-                animate__animated animate__slideInLeft
-              "
-            >
-              <div class="technologies html">
-                <i class="fab fa-html5"></i>
-                <p>HTML5</p>
-              </div>
-              <div class="technologies css">
-                <i class="fab fa-css3-alt"></i>
-                <p>CSS3</p>
-              </div>
-              <div class="technologies js">
-                <i class="fab fa-js"></i>
-                <p>JS</p>
-              </div>
-              <div class="technologies git">
-                <i class="fab fa-git-alt"></i>
-                <p>Git</p>
-              </div>
-              <div class="technologies github">
-                <i class="fab fa-github"></i>
-                <p>GitHub</p>
-              </div>
-              <div class="technologies sass">
-                <i class="fab fa-sass"></i>
-                <p>Sass</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="proyects" class="proyects-container">
-        <h2 class="main-title wow animate__animated animate__fadeIn">
-          MIS PROYECTOS
-        </h2>
-        <div class="proyects">
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          >
-            <h2>Minimalist Calc</h2>
-            <div class="proyect-card__content">
-              <div class="proyect-card__image calc"></div>
-              <div class="proyect-card__contain">
-                <p>Una calculadora con un diseño moderno y minimalista 📱</p>
-                <b>HTML5, CSS3, JavaScript</b>
-                <div class="proyect-card__links">
-                  <a
-                    href="https://github.com/barbosa0205/Minimalist-Calculator"
-                    target="”_blank”"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://barbosa0205.github.io/Minimalist-Calculator/"
-                    target="”_blank”"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></a>
-                  <a><i id="iframe-calc" class="far fa-window-maximize"></i></a>
+        <nav class="sidebar">
+            <div class="toggle-night">
+                <i id="btn-moon" class="fas fa-moon"></i>
+            </div>
+            <div class="main-links">
+                <a href="#home">Inicio</a>
+                <a href="#about-me">Sobre Mi</a>
+                <a href="#proyects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </nav>
+        <header class="main-header">
+            <i
+                id="btn-menu"
+                class="fas fa-bars menu animate__animated animate__zoomIn"
+            ></i>
+        </header>
+        <main id="main">
+            <section id="home" class="home__container">
+                <div class="home">
+                    <div class="h1-container">
+                        <h1 id="home-title" class="wow main-title">
+                            Hola! Soy José Luis Barbosa, Desarrollador Web
+                            FrontEnd
+                        </h1>
+                    </div>
+                    <img
+                        id="image-main"
+                        class="wow"
+                        src="./src/resources/Coding-rafiki-black.svg"
+                        alt="programmer"
+                    />
+                    <div class="btn-container">
+                        <div
+                            id="btn-proyects"
+                            class="
+                                project-btn
+                                wow
+                                animate__animated animate__zoomIn
+                            "
+                        >
+                            <a href="#proyects"> PROYECTOS </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </article>
+            </section>
 
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          >
-            <h2>Pokedex</h2>
-            <div class="proyect-card__content">
-              <div class="proyect-card__image pokedex"></div>
-              <div class="proyect-card__contain">
-                <p>
-                  Una pequeña pero grandiosa pokedex que te dara un vistazo a
-                  las caracteristicas de algunos de los pokemon que habitan los
-                  valles, Atrapalos a todos🚀
-                </p>
-                <b>HTML5, CSS3, JavaScript</b>
-                <div class="proyect-card__links">
-                  <a
-                    href="https://github.com/barbosa0205/Pokedex"
-                    target="”_blank”"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://barbosa0205.github.io/Pokedex/"
-                    target="”_blank”"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></a>
-                  <a
-                    ><i id="iframe-pokedex" class="far fa-window-maximize"></i
-                  ></a>
+            <section id="about-me" class="aboutme__container">
+                <div class="aboutme">
+                    <h2
+                        id="about-title"
+                        class="main-title wow animate__animated animate__fadeIn"
+                    >
+                        Sobre Mi
+                    </h2>
+                    <div class="invisible-bliography">
+                        <article
+                            class="
+                                biography-container
+                                wow
+                                animate__animated animate__fadeInUp
+                            "
+                        >
+                            <img
+                                id="biography-img"
+                                src="./src/resources/Devices-amico.svg"
+                                alt="devices"
+                            />
+                            <p class="sub-title">
+                                Soy un desarrollador y programador Web FrontEnd
+                                Apasionado por el aprendizaje de las mas nuevas
+                                tecnologias y estandares web.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="technologies-container">
+                        <article
+                            class="
+                                technologies-slider
+                                wow
+                                animate__animated animate__slideInLeft
+                            "
+                        >
+                            <div class="technologies html">
+                                <i class="fab fa-html5"></i>
+                                <p>HTML5</p>
+                            </div>
+                            <div class="technologies css">
+                                <i class="fab fa-css3-alt"></i>
+                                <p>CSS3</p>
+                            </div>
+                            <div class="technologies js">
+                                <i class="fab fa-js"></i>
+                                <p>JS</p>
+                            </div>
+                            <div class="technologies git">
+                                <i class="fab fa-git-alt"></i>
+                                <p>Git</p>
+                            </div>
+                            <div class="technologies github">
+                                <i class="fab fa-github"></i>
+                                <p>GitHub</p>
+                            </div>
+                            <div class="technologies sass">
+                                <i class="fab fa-sass"></i>
+                                <p>Sass</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </article>
+            </section>
 
-          <article
-            class="proyect-card wow animate__animated animate__fadeInRight"
-          >
-            <h2>Piedra Papel & Tijeras</h2>
-            <div class="proyect-card__content">
-              <div class="proyect-card__image rps"></div>
-              <div class="proyect-card__contain">
-                <p>
-                  El clasico juego de Piedra Papel Y Tijeras con un diseño
-                  retro! 👾
-                </p>
-                <b>HTML5, CSS3, JavaScript</b>
-                <div class="proyect-card__links">
-                  <a
-                    href="https://github.com/barbosa0205/Paper-Rock-Scsissors"
-                    target="”_blank”"
-                    >Repository</a
-                  >
-                  <a
-                    href="https://barbosa0205.github.io/Paper-Rock-Scsissors/"
-                    target="”_blank”"
-                    ><i class="fas fa-external-link-alt"></i
-                  ></a>
-                  <a><i id="iframe-rps" class="far fa-window-maximize"></i></a>
+            <section id="proyects" class="proyects-container">
+                <h2
+                    id="proyects-title"
+                    class="main-title wow animate__animated animate__fadeIn"
+                >
+                    MIS PROYECTOS
+                </h2>
+                <div class="proyects">
+                    <article
+                        class="
+                            proyect-card
+                            wow
+                            animate__animated animate__fadeInRight
+                        "
+                    >
+                        <h2>Minimalist Calc</h2>
+                        <div class="proyect-card__content">
+                            <div class="proyect-card__image calc"></div>
+                            <div class="proyect-card__contain">
+                                <p>
+                                    Una calculadora con un diseño moderno y
+                                    minimalista 📱
+                                </p>
+                                <div class="proyect-card__tech">
+                                    <h3>Tecnologias utilizadas</h3>
+                                    <i class="fab fa-html5 bg-html"></i>
+                                    <i class="fab fa-css3-alt bg-css"></i>
+                                    <i class="fab fa-js bg-js"></i>
+                                </div>
+                                <div class="proyect-card__links">
+                                    <a
+                                        href="https://github.com/barbosa0205/Minimalist-Calculator"
+                                        target="”_blank”"
+                                        >Repository</a
+                                    >
+                                    <a
+                                        href="https://barbosa0205.github.io/Minimalist-Calculator/"
+                                        target="”_blank”"
+                                        ><i class="fas fa-external-link-alt"></i
+                                    ></a>
+                                    <a
+                                        ><i
+                                            id="iframe-calc"
+                                            class="far fa-window-maximize"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article
+                        class="
+                            proyect-card
+                            wow
+                            animate__animated animate__fadeInRight
+                        "
+                    >
+                        <h2>Pokedex</h2>
+                        <div class="proyect-card__content">
+                            <div class="proyect-card__image pokedex"></div>
+                            <div class="proyect-card__contain">
+                                <p>
+                                    Una pequeña pero grandiosa pokedex que te
+                                    dara un vistazo a las caracteristicas de
+                                    algunos de los pokemon que habitan los
+                                    valles, Atrapalos a todos🚀
+                                </p>
+                                <div class="proyect-card__tech">
+                                    <h3>Tecnologias utilizadas</h3>
+                                    <i class="fab fa-html5 bg-html"></i>
+                                    <i class="fab fa-css3-alt bg-css"></i>
+                                    <i class="fab fa-js bg-js"></i>
+                                </div>
+                                <div class="proyect-card__links">
+                                    <a
+                                        href="https://github.com/barbosa0205/Pokedex"
+                                        target="”_blank”"
+                                        >Repository</a
+                                    >
+                                    <a
+                                        href="https://barbosa0205.github.io/Pokedex/"
+                                        target="”_blank”"
+                                        ><i class="fas fa-external-link-alt"></i
+                                    ></a>
+                                    <a
+                                        ><i
+                                            id="iframe-pokedex"
+                                            class="far fa-window-maximize"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article
+                        class="
+                            proyect-card
+                            wow
+                            animate__animated animate__fadeInRight
+                        "
+                    >
+                        <h2>Piedra Papel & Tijeras</h2>
+                        <div class="proyect-card__content">
+                            <div class="proyect-card__image rps"></div>
+                            <div class="proyect-card__contain">
+                                <p>
+                                    El clasico juego de Piedra Papel Y Tijeras
+                                    con un diseño retro! 👾
+                                </p>
+                                <div class="proyect-card__tech">
+                                    <h3>Tecnologias utilizadas</h3>
+                                    <i class="fab fa-html5 bg-html"></i>
+                                    <i class="fab fa-css3-alt bg-css"></i>
+                                    <i class="fab fa-js bg-js"></i>
+                                </div>
+                                <div class="proyect-card__links">
+                                    <a
+                                        href="https://github.com/barbosa0205/Paper-Rock-Scsissors"
+                                        target="”_blank”"
+                                        >Repository</a
+                                    >
+                                    <a
+                                        href="https://barbosa0205.github.io/Paper-Rock-Scsissors/"
+                                        target="”_blank”"
+                                        ><i class="fas fa-external-link-alt"></i
+                                    ></a>
+                                    <a
+                                        ><i
+                                            id="iframe-rps"
+                                            class="far fa-window-maximize"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <footer id="contact" class="wow animate__animated animate__bounceInUp">
-        <a id="mailto" href="mailto:barbosa02058@gmail.com">CLICK</a>
-        <div class="footer-container">
-          <div class="contact">
-            <h2>CONTACTAME</h2>
-            <form
-              id="form"
-              class="form"
-              action="https://formsubmit.co/barbosa02058@gmail.com"
-              method="POST"
+            </section>
+            <footer
+                id="contact"
+                class="wow animate__animated animate__bounceInUp"
             >
-              <div class="datos">
-                <input type="text" name="name" placeholder="Nombre Completo" />
-                <input
-                  type="email"
-                  placeholder="Correo Electronico"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="message">
-                <textarea
-                  name="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="Tu Mensaje"
-                  required
-                ></textarea>
-              </div>
-              <div class="submit-form">
-                <button type="submit">Enviar</button>
-              </div>
-              <input
-                type="hidden"
-                name="_next"
-                value="https://barbosa0205.github.io/portfolio/#home"
-              />
-              <input
-                type="hidden"
-                name="_autoresponse"
-                value="Tu correo se a enviado correctamente. Este se respondera a la brevedad."
-              />
-            </form>
-          </div>
-          <div class="social">
-            <a href="https://github.com/barbosa0205" target="_blank"
-              ><i class="fab fa-github-alt"></i
-            ></a>
-            <a href="https://twitter.com/barbosa_cepeda" target="”_blank”"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/jose-luis-barbosa-cepeda-795b08217/"
-              target="_blank"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-          </div>
-        </div>
-      </footer>
-    </main>
-    <script src="./src/index.js"></script>
-    <script src="./src/menu.js"></script>
-    <script src="./src/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-  </body>
+                <a id="mailto" href="mailto:barbosa02058@gmail.com">CLICK</a>
+                <div class="footer-container">
+                    <div class="contact">
+                        <h2>CONTACTAME</h2>
+                        <form
+                            id="form"
+                            class="form"
+                            action="https://formsubmit.co/barbosa02058@gmail.com"
+                            method="POST"
+                        >
+                            <div class="datos">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Nombre Completo"
+                                />
+                                <input
+                                    type="email"
+                                    placeholder="Correo Electronico"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                            <div class="message">
+                                <textarea
+                                    name="message"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Tu Mensaje"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="submit-form">
+                                <button type="submit">Enviar</button>
+                            </div>
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value="https://barbosa0205.github.io/portfolio/#home"
+                            />
+                            <input
+                                type="hidden"
+                                name="_autoresponse"
+                                value="Tu correo se a enviado correctamente. Este se respondera a la brevedad."
+                            />
+                        </form>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/barbosa0205" target="_blank"
+                            ><i class="fab fa-github-alt"></i
+                        ></a>
+                        <a
+                            href="https://twitter.com/barbosa_cepeda"
+                            target="”_blank”"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a
+                            href="https://www.linkedin.com/in/jose-luis-barbosa-cepeda-795b08217/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="./src/index.js"></script>
+        <script src="./src/menu.js"></script>
+        <script src="./src/wow.min.js"></script>
+        <script src="./src/changeColor.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
 </html>

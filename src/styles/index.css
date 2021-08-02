@@ -50,6 +50,7 @@ body {
     width: auto;
 
     font-family: JetBrains Mono;
+    transition: 0.3s ease all;
 }
 
 a {
@@ -112,15 +113,15 @@ iframe {
 }
 
 .sidebar {
-    width: 60%;
+    width: 35%;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -65%;
+    left: -40%;
     transition: 0.4s;
     background: var(--secondary-white);
     box-shadow: 0 0 5px 0 #cccccc;
-    z-index: 1000;
+    z-index: 4000;
 }
 
 .sidebar-open {
@@ -141,6 +142,7 @@ iframe {
     font-size: 2.5rem;
     color: var(--secondary-gray);
     cursor: pointer;
+    transition: 0.3s ease all;
 }
 
 .main-links {
@@ -155,7 +157,7 @@ iframe {
     border-bottom: 1px solid #e2e2e2;
 }
 .main-links a:first-child {
-    border: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
 }
 
 /* .push {
@@ -169,21 +171,23 @@ iframe {
     display: flex;
     justify-content: flex-end;
     width: auto;
-    background: #ffffff9a;
+    background: #ffffff8c;
     backdrop-filter: blur(2px);
     min-width: 280px;
-    z-index: 4000;
+    z-index: 3000;
+    transition: 0.3s ease all;
 }
 
 .menu {
     display: inline-block;
     padding: 20px;
-    color: #000000;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 main {
     position: relative;
+    transition: 0.3s ease all;
 }
 
 .home__container {
@@ -196,7 +200,6 @@ main {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    margin-top: 40px;
     min-height: 720px;
 }
 
@@ -366,37 +369,59 @@ main {
     font-weight: bold;
 }
 
-.html i:hover,
-.html:hover {
+body.dark .html i:hover {
     transition: 0.5s;
     color: #fc824c;
 }
 
-.css i:hover,
-.css:hover {
+body.dark .css i:hover {
     transition: 0.5s;
     color: #4299ee;
 }
 
-.js i:hover,
-.js:hover {
+body.dark .js i:hover {
     transition: 0.5s;
     color: #f9e268;
 }
 
-.git i:hover,
-.git:hover {
+body.dark .git i:hover {
     transition: 0.5s;
     color: #f99e46;
 }
 
-.github i:hover,
-.github:hover {
+body.dark .github i:hover {
     transition: 0.5s;
     color: #41b85f;
 }
-.sass i:hover,
-.sass:hover {
+body.dark .sass i:hover {
+    transition: 0.5s;
+    color: #ff5194;
+}
+.html i:hover {
+    transition: 0.5s;
+    color: #fc824c;
+}
+
+.css i:hover {
+    transition: 0.5s;
+    color: #4299ee;
+}
+
+.js i:hover {
+    transition: 0.5s;
+    color: #f9e268;
+}
+
+.git i:hover {
+    transition: 0.5s;
+    color: #f99e46;
+}
+
+.github i:hover {
+    transition: 0.5s;
+    color: #41b85f;
+}
+.sass i:hover {
     transition: 0.5s;
     color: #ff5194;
 }
@@ -491,11 +516,27 @@ main {
     padding-left: 5px;
 }
 
-.proyect-card__contain b {
-    font-size: 1.6rem;
+.proyect-card__tech h3 {
+    margin-top: 15px;
+    font-size: 1.8rem;
     font-family: 'Kanit', sans-serif;
-    font-weight: 400;
-    margin-left: 30px;
+    font-weight: 500;
+    color: #202020;
+}
+
+.proyect-card__tech i {
+    margin-top: 10px;
+    font-size: 3rem;
+}
+.bg-html {
+    color: #fc824c;
+}
+
+.bg-css {
+    color: #4299ee;
+}
+.bg-js {
+    color: #f9e268;
 }
 
 .proyect-card__links {
@@ -503,7 +544,6 @@ main {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    height: 30px;
 }
 
 .proyect-card__links a {
@@ -513,7 +553,7 @@ main {
 
 .proyect-card__links a:first-child {
     height: 25px;
-    padding: 5px;
+    padding: 5px 10px;
     text-align: center;
     font-family: 'Kanit', sans-serif;
     font-size: 1.4rem;
@@ -573,7 +613,7 @@ footer {
     height: 30px;
     margin: 10px 10px;
     padding-left: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 1.6rem;
 }
 
@@ -598,7 +638,7 @@ textarea {
     margin-top: 10px;
     padding-top: 10px;
     outline: none;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 1.6rem;
 }
 
