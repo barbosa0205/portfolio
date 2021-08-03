@@ -516,6 +516,7 @@ body.dark .sass i:hover {
 .proyect-card__content {
     display: flex;
     width: 100%;
+    padding-left: 10px;
 }
 
 .proyect-card__contain p {
@@ -538,6 +539,7 @@ body.dark .sass i:hover {
 .proyect-card__tech i {
     margin-top: 10px;
     font-size: 3rem;
+    margin-bottom: 10px;
 }
 .bg-html {
     color: #fc824c;

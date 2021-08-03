@@ -97,6 +97,10 @@ main {
     margin: 0;
 }
 
+.proyect-card__content {
+    padding: 0;
+}
+
 .proyects-container h2 {
     font-size: 4rem;
 }
