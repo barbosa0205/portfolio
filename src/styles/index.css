@@ -50,7 +50,7 @@ body {
     width: auto;
 
     font-family: JetBrains Mono;
-    transition: 0.3s ease all;
+    transition: 0.8s ease all;
 }
 
 a {
@@ -175,7 +175,7 @@ iframe {
     backdrop-filter: blur(2px);
     min-width: 280px;
     z-index: 3000;
-    transition: 0.3s ease all;
+    transition: 0.8s ease all;
 }
 
 .menu {
@@ -183,11 +183,12 @@ iframe {
     padding: 20px;
     font-size: 2rem;
     cursor: pointer;
+    transition: 0.8s ease all;
 }
 
 main {
     position: relative;
-    transition: 0.3s ease all;
+    transition: 0.8s ease all;
 }
 
 .home__container {
@@ -211,6 +212,7 @@ main {
     text-align: start;
     color: var(--primary-dark);
     text-shadow: -4px 2px #dfdfdf;
+    transition: 0.8s ease all;
 
     animation: slideInLeft;
     animation-duration: 0.8s;
@@ -243,6 +245,7 @@ main {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: -5px 3px 1px #6d6b6b;
+    transition: 0.8s ease all;
 }
 
 .project-btn a {
@@ -287,6 +290,7 @@ main {
     box-shadow: -5px 4px 1px var(--secondary-gray),
         -5px -1px 1px var(--secondary-gray), 1px 4px 1px var(--secondary-gray),
         1px -1px 1px var(--secondary-gray);
+    transition: 0.8s ease all;
 }
 
 .biography-img-hover {
@@ -304,6 +308,7 @@ main {
     font-size: 2.5rem;
     text-align: start;
     color: var(--primary-dark);
+    transition: 0.8s ease all;
 }
 
 .technologies-container {
@@ -363,10 +368,12 @@ main {
     margin: 30px;
     font-size: 12rem;
     color: var(--primary-dark);
+    transition: 0.8s ease all;
 }
 
 .technologies p {
     font-weight: bold;
+    transition: 0.8s ease all;
 }
 
 body.dark .html i:hover {
@@ -462,6 +469,7 @@ body.dark .sass i:hover {
     box-shadow: -5px 3px 1px var(--secondary-gray),
         -5px -1px 1px var(--secondary-gray), 1px 3px 1px var(--secondary-gray),
         1px -1px 1px var(--secondary-gray);
+    transition: 0.8s ease all;
 }
 
 .proyect-card h2 {
@@ -471,6 +479,7 @@ body.dark .sass i:hover {
     color: var(--primary-dark);
     font-family: 'Rubik Mono One', sans-serif;
     margin: 10px;
+    transition: 0.8s ease all;
 }
 
 .proyect-card__image {
@@ -514,6 +523,7 @@ body.dark .sass i:hover {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
     padding-left: 5px;
+    transition: 0.8s ease all;
 }
 
 .proyect-card__tech h3 {
@@ -522,6 +532,7 @@ body.dark .sass i:hover {
     font-family: 'Kanit', sans-serif;
     font-weight: 500;
     color: #202020;
+    transition: 0.8s ease all;
 }
 
 .proyect-card__tech i {
@@ -571,6 +582,7 @@ footer {
     width: 100%;
     height: auto;
     background: var(--secondary-dark);
+    transition: 0.8s ease all;
 }
 
 #mailto {
