@@ -113,11 +113,11 @@ iframe {
 }
 
 .sidebar {
-    width: 35%;
+    width: 60%;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -40%;
+    left: -65%;
     transition: 0.4s;
     background: var(--secondary-white);
     box-shadow: 0 0 5px 0 #cccccc;
